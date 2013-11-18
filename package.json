@@ -2,6 +2,7 @@
   "name": "getname",
   "version": "0.0.1",
   "dependencies": {
+    "mongodb" : "1.x",
     "express": "3.1.x"
   },
   "engines": {
