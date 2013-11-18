@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 });
 
 
-app.get('/mongotest', function(request, response) {
+app.get('/importdata', function(request, response) {
     var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
     response.send('mongotest page!');
     mongo.Db.connect(mongoUri, function (err, db) {
