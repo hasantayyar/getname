@@ -11,7 +11,7 @@ app.get('/', function(request, response) {
 });
 
 
-app.get('/importhuman', function(request, response) {
+app.get('/importdata', function(request, response) {
     var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
     
     var filename = __dirname+'/humannames.csv';
