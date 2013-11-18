@@ -9,12 +9,24 @@ app.get('/', function(request, response) {
 });
 
 
-app.get('/mongotest', function(request, response) {
+app.get('/importhuman', function(request, response) {
     var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
-    response.send('mongotest page!');
+    response.send('importing human names');
+    var fs = require('fs'),
+    readline = require('readline');
+    var rd = readline.createInterface({
+        input: fs.createReadStream('//Users/tayyar/Dropbox/Scripts/node-projects/getname/humannames.csv'),
+        output: process.stdout,
+        terminal: false
+    });
+
+    rd.on('line', function(line) {
+        console.log(line);
+    });
+
     mongo.Db.connect(mongoUri, function (err, db) {
-      db.collection('mydocs', function(er, collection) {
-        collection.insert({'mykey': 'myvalue'}, {safe: true}, function(er,rs) {});
+      db.collection('names', function(er, collection) {
+        collection.insert({'name': 'myvalue'}, {safe: true}, function(er,rs) {});
       });
     });      
 });
