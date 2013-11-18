@@ -12,8 +12,6 @@ app.get('/', function(request, response) {
 
 
 app.get('/importdata', function(request, response) {
-    var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
-    
     var filename = __dirname+'/humannames.csv';
     console.log('reading '+filename);
     var input = fs.createReadStream(filename);
@@ -47,6 +45,8 @@ function readLines(input, addnew) {
 }
 
 function addnew(data) {
+  var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
+
   data = data.split(";");
   console.log(data);
   mongo.Db.connect(mongoUri, function (err, db) {
