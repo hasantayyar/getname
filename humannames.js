@@ -1,3 +1,6 @@
+module.exports = {
+  names: function () {
+   var names = 
 {
 "names": [
 {"name":"Aba","type":"Kız"},
@@ -616,7 +619,7 @@
 {"name":"Algül","type":"Kız"},
 {"name":"Algün","type":"Erkek/Kız"},
 {"name":"Alhan","type":"Erkek"},
-{"name":""Alıcı "","type":"Erkek"},
+{"name":"Alıcı","type":"Erkek"},
 {"name":"Alım","type":"Kız"},
 {"name":"Alımlı","type":"Kız"},
 {"name":"Alıncak","type":"Kız"},
@@ -2180,7 +2183,7 @@
 {"name":"Dölaslan","type":"Erkek"},
 {"name":"Dönmezcan","type":"Erkek"},
 {"name":"Duduhan","type":"Kız"},
-{"name":""Duhan "","type":"Kız"},
+{"name":"Duhan","type":"Kız"},
 {"name":"Duman","type":"Erkek"},
 {"name":"Dumanbey","type":"Erkek"},
 {"name":"Dura","type":"Erkek"},
@@ -4231,7 +4234,7 @@
 {"name":"Raciye","type":"Kız"},
 {"name":"Radi","type":"Erkek"},
 {"name":"Radife","type":"Kız"},
-{"name":""Radiye "","type":"Kız"},
+{"name":"Radiye","type":"Kız"},
 {"name":"Rafet","type":"Erkek"},
 {"name":"Rafettin","type":"Erkek"},
 {"name":"Rafi","type":"Erkek"},
@@ -4301,7 +4304,7 @@
 {"name":"Regaip","type":"Erkek"},
 {"name":"Reha","type":"Erkek/Kız"},
 {"name":"Rehayeddin","type":"Erkek"},
-{"name":""Renan "","type":"Erkek/Kız"},
+{"name":"Renan","type":"Erkek/Kız"},
 {"name":"Renginar","type":"Kız"},
 {"name":"Resai","type":"Erkek"},
 {"name":"Resane","type":"Kız"},
@@ -4358,7 +4361,7 @@
 {"name":"Sadettin","type":"Erkek"},
 {"name":"Sadhezar","type":"Kız"},
 {"name":"Sadık","type":"Erkek"},
-{"name":""Sadıka "","type":"Kız"},
+{"name":"Sadıka","type":"Kız"},
 {"name":"Sadi","type":"Erkek"},
 {"name":"Sadice","type":"Kız"},
 {"name":"Sadir","type":"Erkek"},
@@ -4826,7 +4829,7 @@
 {"name":"Süvari","type":"Erkek"},
 {"name":"Süveyda","type":"Kız"},
 {"name":"Süzülay","type":"Kız"},
-{"name":""Şad "","type":"Erkek"},
+{"name":"Şad ","type":"Erkek"},
 {"name":"Şadan","type":"Erkek/Kız"},
 {"name":"Şader","type":"Erkek"},
 {"name":"Şadıman","type":"Erkek/Kız"},
@@ -5902,7 +5905,7 @@
 {"name":"Zeycan","type":"Erkek"},
 {"name":"Zeynullah","type":"Erkek"},
 {"name":"Zeyyat","type":"Erkek"},
-{"name":""Ziba  "","type":"Kız"},
+{"name":"Ziba  ","type":"Kız"},
 {"name":"Zican","type":"Kız"},
 {"name":"Zikrullah","type":"Erkek"},
 {"name":"Zişan","type":"Erkek/Kız"},
@@ -6673,7 +6676,7 @@
 {"name":"Çilenti","type":"Kız"},
 {"name":"Çiler","type":"Kız"},
 {"name":"Çimen","type":"Kız"},
-{"name":""Çin "","type":"Erkek"},
+{"name":"Çin ","type":"Erkek"},
 {"name":"Çinel","type":"Erkek/Kız"},
 {"name":"Çiner","type":"Erkek"},
 {"name":"Çinerk","type":"Erkek"},
@@ -9700,3 +9703,6 @@
 {"name":"Ün","type":"Erkek"},
 {"name":"Ünlü","type":"Erkek/Kız"}]
 };
+return names;
+}
+}
