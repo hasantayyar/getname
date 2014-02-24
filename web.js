@@ -56,10 +56,9 @@ var random_name = function(type,res,less){
           return false;
         }
         count = data;
-        console.log(count);
         db.collection('names', function(er, collection) {
           var rnd = Math.floor(Math.random() * count) + 1;
-          collection.find(q).limit(-1).skip(rnd).next(function(err,data) {
+          collection.find(q).limit(1).skip(rnd).nextObject(function(err,data) {
             if(!data){
               res.end();
               return false;
