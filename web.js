@@ -33,7 +33,6 @@ app.get('/name/:id', function(req,res){
   mongo.Db.connect(mongoUri, function (err, db) {
    db.collection('names', function(er, collection) {
        collection.findOne({"_id":new ObjectID(req.params.id)},function(err,data) {
-            data.title = data.a + " - " +data.t;
             data.id = data._id;
            res.render('name', data);
        });
