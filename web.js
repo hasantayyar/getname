@@ -10,6 +10,7 @@ var app = express();
 app.use(express.logger());
 
 
+var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
