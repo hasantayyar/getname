@@ -50,6 +50,7 @@ var random_name = function(type,res){
     var count = 1;
     db.collection('names', function(er, collection) {
       var q = {"type":type};
+      console.log(q);
       collection.count(q,function(err,data) {
         if(!data){
           res.end();
