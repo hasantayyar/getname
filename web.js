@@ -41,15 +41,14 @@ app.get('/name/:id', function(req,res){
 
 });
 app.get('/rand/:gender',function(req,res){
-  var name = random_name(req.gender,res);
+  var name = random_name(req.params.gender,res);
 });
 
 
-var random_name = function(type,res){
+var random_name = function(type,res,less){
   mongo.Db.connect(mongoUri, function (err, db) {
     var count = 1;
     db.collection('names', function(er, collection) {
-      var q = {"type":type};
       console.log(q);
       collection.count(q,function(err,data) {
         if(!data){
