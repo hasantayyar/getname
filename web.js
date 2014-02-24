@@ -49,7 +49,7 @@ var random_name = function(type,res,less){
   mongo.Db.connect(mongoUri, function (err, db) {
     var count = 1;
     db.collection('names', function(er, collection) {
-      console.log(q);
+      var q = {"type":type};
       collection.count(q,function(err,data) {
         if(!data){
           res.end();
