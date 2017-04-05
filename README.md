@@ -4,4 +4,6 @@
 getname.herokuapp.com
 ==============================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hasantayyar/getname.svg)](https://greenkeeper.io/)
+
 Still in development
